@@ -45,12 +45,13 @@
             var data = $(this).serialize();
             $.post("/signin", data, function (info) {
                 if (info.code === 200) {
-                    // location.href = '/';
+                    location.href = '/';
                 } else {
                     alert(info.msg);
                 }
             });
         });
+        $()
     </script>
 </body>
 
